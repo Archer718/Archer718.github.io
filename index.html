@@ -1,38 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mobile App</title>
+    <style>
+      body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+header nav ul li {
+    margin: 0 1rem;
+}
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="cairoofice">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+main {
+    padding: 2rem 0;
+}
 
-  <title>cairoofice</title>
-  <link rel="manifest" href="manifest.json">
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feature {
+    flex: 1;
+    min-width: 250px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+    <header>
+        <div class="container">
+            <h1>My Mobile App</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to My Mobile App</h2>
+                <p>Experience the best features and seamless performance.</p>
+                <a href="#download" class="btn">Download Now</a>
+            </div>
+        </section>
+        <section id="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Feature 1</h3>
+                        <p>Detail about feature 1.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Feature 2</h3>
+                        <p>Detail about feature 2.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Feature 3</h3>
+                        <p>Detail about feature 3.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="download">
+            <div class="container">
+                <h2>Download</h2>
+                <button id="downloadBtn" class="btn">Download Now</button>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Mobile App. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+      document.getElementById('downloadBtn').addEventListener('click', function() {
+    alert('Download started!');
+});
+    </script>
 </body>
 </html>
+
+
+
+
+
