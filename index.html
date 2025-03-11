@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Mobile App</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tazker App</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
 <body>
     <header>
         <div class="container">
-            <h1>My Mobile App</h1>
+            <div class="logo-title">
+                <img src="images/logo.png" alt="App Logo" class="app-logo" width="50" height="50">
+                <h1>Tazker App | تطبيق تذكير</h1>
+                
+            </div>
+            
+            
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#download">Download</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#features">المميزات</a></li>
+                    <li><a href="#home">التحميل</a></li>
+                    <li><a href="#contact">التواصل معنا</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <section id="home">
-            <div class="container">
-                <h2>Welcome to My Mobile App</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque, nunc nec egestas tincidunt, urna sapien ultricies nisi, a bibendum libero justo nec libero.</p>
-                <img src="https://via.placeholder.com/150" alt="Home Image">
-                <a href="#download" class="btn">Download Now</a>
+            <div class="container home-content">
+                <div class="left-column">
+                    <img src="images/logo.png" width="100">
+                    <h2 class="amiri">مرحبا بكم في تطبيق تذكير</h2>
+                    <h3 class="amiri">كن حياً بذكر الله</h3>
+                    <a href="https://github.com/Archer718/TazkerApp/releases/download/v1.0.0/app-release.apk" class="btn" target="_blank">تحميل الان V1.0.0</a>
+                </div>
+                <div class="right-column">
+                    <img src="images/app1c22.png" alt="Mobile Screenshot" width="200" height="500">
+                </div>
             </div>
         </section>
-        <section id="features">
+        <br>
+        <br>
+        <br>
+        <center>
+        <h2>لقطات الشاشة من داخل التطبيق</h2>
+    </center>
+        <section id="screenshots">
+            
             <div class="container">
-                <h2>Features</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <h3>Feature 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque, nunc nec egestas tincidunt, urna sapien ultricies nisi, a bibendum libero justo nec libero.</p>
-                        <img src="https://via.placeholder.com/150" alt="Feature 1 Image">
+            
+                <div class="screenshots-grid">
+                    <div class="screenshot">
+                        <img src="images/2.png" alt="Screenshot 2" width="230" height="400">
                     </div>
-                    <div class="feature">
-                        <h3>Feature 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque, nunc nec egestas tincidunt, urna sapien ultricies nisi, a bibendum libero justo nec libero.</p>
-                        <img src="https://via.placeholder.com/150" alt="Feature 2 Image">
+                    <div class="screenshot">
+                        <img src="images/3.png" alt="Screenshot 3" width="230" height="400">
                     </div>
-                    <div class="feature">
-                        <h3>Feature 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque, nunc nec egestas tincidunt, urna sapien ultricies nisi, a bibendum libero justo nec libero.</p>
-                        <img src="https://via.placeholder.com/150" alt="Feature 3 Image">
+                    <div class="screenshot">
+                        <img src="images/4.png" alt="Screenshot 3" width="230" height="400">
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/5.png" alt="Screenshot 3" width="230" height="400">
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/6.png" alt="Screenshot 3" width="230" height="400">
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/7.png" alt="Screenshot 3" width="230" height="400">
                     </div>
                 </div>
             </div>
         </section>
-        <section id="download">
+        <section id="features">
+            <div class="container">
+                <h2>مميزات التطبيق</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-list"></i>
+                        <h3>قوائم الاذكار</h3>
+                        <p class="amiri">تتيح لك تلك الميزة ان تقوم بإنشاء قائمة للاذكار مما يتيح لك عمل اكثر من ورد يومي لك</p>
+                      
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-external-link-alt"></i>
+                        <h3>التسبيح الخارجي</h3>
+                        <p class="amiri">يمكنك التسبيح اثناء استخدامك للهاتف بكل سهولة وذلك عن طريق تلك الميزة حيث يتم إنشاء سبحة خارجية عقب الخروج من التطبيق</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bell"></i>
+                        <h3>التذكير الدوري</h3>
+                        <p class="amiri">لتكن دائماً ذاكراً لله حيث يقوم التطبيق بإرسال اشعارات تذكيرية لتذكر الله في كل وقت علي مدار اليوم </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- <section id="download">
             <div class="container">
                 <h2>Download</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque, nunc nec egestas tincidunt, urna sapien ultricies nisi, a bibendum libero justo nec libero.</p>
-                <img src="https://via.placeholder.com/150" alt="Download Image">
                 <button id="downloadBtn" class="btn">Download Now</button>
             </div>
-        </section>
+        </section> -->
+        <br>
+        <br>
         <section id="contact">
             <div class="container">
-                <h2>Contact</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit" class="btn">Send</button>
-                </form>
-                <img src="https://via.placeholder.com/150" alt="Contact Image">
+                <h2 style="color: white;">التواصل معانا</h2>
+                <div class="contact-buttons">
+                    <a href="mailto:aialxv687@gmail.com" class="contact-button">
+                        <i class="fas fa-envelope"></i> Gmail
+                    </a>
+                    <a href="https://wa.me/+201097856745" class="contact-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://m.me/your-facebook-username" class="contact-button" target="_blank">
+                        <i class="fab fa-facebook-messenger"></i> Messenger
+                    </a>
+                </div>
             </div>
         </section>
        <footer>
         <div class="container">
-            <p>&copy; 2025 My Mobile App. All rights reserved.</p>
+           <p>&copy; 2025 Tazker App. All rights reserved.</p>
         </div>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
-
