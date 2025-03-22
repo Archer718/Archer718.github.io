@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'cairo';
+    src: url('../assets/fonts/cairo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'cairo' , 'Arial', sans-serif;
+    background-color: #141418;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    background-image: url('assets/images/background.jpg'); /* Path to your background image */
+    background-attachment: fixed; /* Makes the background fixed */
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* App Bar */
+.app-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 24, 0.447);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo/title and sections */
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px; /* Add space between logo and title */
+}
+
+.nav-links a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* .nav-links a:hover {
+    background-color: #575757;
+} */
+
+
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+/* Drawer */
+.drawer {
+    display: block; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #141418;
+    color: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.drawerBer{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.525);
+    
+}
+
+.drawer a {
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.drawer a:hover {
+    background-color: #575757;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: #141418;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/back10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.homeContent{
+    background-color: rgba(0, 0, 0, 0.49);
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+
+}
+
+.spacer{
+    padding-top: 13%
+}
+
+.homeContent img{
+    width: 170px;
+    height: 170px;
+}
+
+.homeT1{
+    display: block;
+    font-size: small;
+}
+
+#title{
+    display: block;
+    font-size: xxx-large;
+}
+
+.about{
+    display: flex;
+    background-color: #141418;
+}
+
+.about .column{
+    flex: 1;
+    padding: 10px;
+}
+
+.about .leftSide{
+    /* background-color: rgb(255, 0, 0); */
+    justify-items: center;
+
+}
+
+.about .leftSide img{
+
+    width: auto;
+    height: auto;
+
+}
+.about .rightSide{
+    position: relative;
+}
+
+.overColor1, .overColor2{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    background-color: rgba(141, 98, 4, 0.596);
+    width: 70%;
+    height: 70%;
+    transform: rotatez(320deg);
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.overColor2{
+    background-color: rgba(19, 18, 18, 0.808);
+    transform: rotatez(300deg);
+    z-index: 2;
+}

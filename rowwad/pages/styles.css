@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'cairo';
+    src: url('../assets/fonts/cairo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'cairo' , 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    background-image: url('../assets/images/background.jpg'); /* Path to your background image */
+    background-attachment: fixed; /* Makes the background fixed */
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* App Bar */
+.app-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #141418;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo/title and sections */
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px; /* Add space between logo and title */
+}
+
+.nav-links a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+}
+
+
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    
+}
+
+/* Drawer */
+.drawer {
+    display: block; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #141418;
+    color: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.drawerBer{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.525);
+    
+}
+
+.drawer a {
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.drawer a:hover {
+    background-color: #575757;
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: rgba(20, 20, 24, 0.93); /* Adds a slight background to sections for readability */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container div {
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+/* Profile */
+.profile {
+    text-align: center;
+    background-image: url('../assets/images/back8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.overlay{
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.549);
+    /* z-index: -1000;*/
+}
+
+.spacer{
+    height: 3vh;  
+    margin-bottom: 0px;
+}
+
+.profile h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.profile h3 {
+    color: #ffae00;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.contact-info, .qualifies, .languages, .eduExp, .practicalExp, .memberships, .books, .discussions {
+    margin: 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #141418;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e4e4e4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dviderLine {
+    height: 4px;
+    border-width: 0;
+    color: gray;
+    background-color: #A07C2E;
+}
+
+.itemIcons {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #A07C2E;
+}
+
+.itemTitle {
+    font-size: 1.2em;
+}
+
+/* Alert Dialog */
+.alert-dialog {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-content {
+    background-color: #141418;
+    padding: 20px;
+    height: 50vh;
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: scroll;
+}
+
+.alert-content h2 {
+    margin-top: 0;
+}
+
+.alert-content button {
+    margin-top: 20px;
+    position: fixed;
+    bottom: 120px;
+    left: 0px;
+    right: 0px;
+}
+
+.alertButton{
+    width: 50%;
+    height: 50px;
+    color: #A07C2E;
+    background-color: #333;
+   margin-right: 30%;
+   font-size: 1.15em;
+    border: none;
+    border-radius: 20px;
+
+}
+
+/* Footer */
+footer {
+    background-color: #141418;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+    body {
+        
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    .app-bar {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .logo-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    .menu-button {
+        display: block; /* Show menu button on smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links on smaller screens */
+    }
+
+    .itemTitle {
+        font-size: 1em;
+    }
+
+    .drawerBer {
+        display: none;
+        flex-direction: column;
+    }
+
+    .profile {
+        /* height: auto; */
+        height: 70vh;
+        /* padding: 20px; */
+    }
+
+    .profile h3{
+        font-weight: bold;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .spacer{
+        height: auto;  
+        margin-bottom: 0px;
+    }
+
+    .alert-content {
+        width: 80%;
+        height: 350px;
+    }
+
+    .alertButton{
+
+       margin-right: 20%;
+      
+    
+    }
+}
