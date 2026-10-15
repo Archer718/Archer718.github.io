@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'amiri';
-    src: url('fonts/amiri.ttf') format('truetype');
+    src: url('assets/fonts/amiri.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'reem';
-    src: url('fonts/reem.ttf') format('truetype');
+    src: url('assets/fonts/reem.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -136,14 +136,14 @@ section {
 
 
 #home {
-    background-image: url('https://static.vecteezy.com/system/resources/previews/021/736/680/original/islamic-background-for-ramadan-eid-ul-fitr-eid-al-adha-mawlid-nabi-and-islamic-new-year-free-vector.jpg');
+    /* background-image: url('assets/images/islamic-background.jpg'); */
     padding-top: 10px;
     
     
 }
 
 #features {
-    background-image: url('https://via.placeholder.com/150');
+    /* background-image: url('assets/images/features-background.jpg'); */
 }
 
 #download {
